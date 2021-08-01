@@ -14,7 +14,6 @@ background-color: #1d001d;
 }
 img {
 border-style: hidden;
-border-radius:10px;
 }
 div {
 overflow: scroll;
@@ -31,98 +30,88 @@ table {
 border: 0px hidden #660000;
 overflow: scroll;
 }
-* {box-sizing:border-box}
-/* Slideshow container */
+* {
+}
 .slideshow-container {
+margin: auto;
 max-width: 1000px;
 position: relative;
-margin: auto;
 }
-/* Make the images invisible by default */
 .Containers {
 display: none;
 }
-/* forward & Back buttons */
 .Back, .forward {
+padding: 17px;
 cursor: pointer;
 position: absolute;
 top: 48%;
 width: auto;
 margin-top: -23px;
-padding: 17px;
 color: grey;
 font-weight: bold;
 font-size: 19px;
-transition: 0.4s ease;
-border-radius: 0 5px 5px 0;
-user-select: none;
 }
-/* Place the "forward button" to the right */
 .forward {
 right: 0;
-border-radius: 4px 0 0 4px;
 }
-/*when the user hovers,add a black background with some little opacity */
 .Back:hover, .forward:hover {
-background-color: rgba(0,0,0,0.8);
 }
-/* Caption Info */
 .Info {
+padding: 10px 14px;
 color: #e3e3e3;
 font-size: 16px;
-padding: 10px 14px;
 position: absolute;
 bottom: 10px;
 width: 100%;
 text-align: center;
 }
-/* Worknumbering (1/3 etc) */
 .MessageInfo {
+padding: 10px 14px;
 color: #f2f2f3;
 font-size: 14px;
-padding: 10px 14px;
 position: absolute;
 top: 0;
 }
-/* The circles or bullets and indicators */
 .dots {
+margin: 0 3px;
 cursor: pointer;
 height: 16px;
 width: 16px;
-margin: 0 3px;
-background-color: #acc;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.5s ease;
+background-color: #aacccc;
 }
 .enable, .dots:hover {
 background-color: #717161;
 }
-/* Faint animation */
 .fade {
--webkit-animation-name: fade;
--webkit-animation-duration: 1.4s;
-animation-name: fade;
-animation-duration: 1.4s;
 }
-@-webkit-keyframes fade {
-from {opacity: .5}
-to {opacity: 2}
+.Div1 {
+border-style: solid;
+border-width: 0;
+width: 100%;
+min-height: 50px;
+position: fixed;
 }
-@keyframes fade {
-from {opacity: .5}
-to {opacity: 2}
+.Div2 {
+min-height: 1000px;
+width: 45%;
+margin-right: 5px;
+overflow: auto;
+position: absolute;
+left: 28.5%;
 }
 </style>
 </head>
 <body>
-<div class="div"><big style="font-weight: bold;"><big><big><big><span>&nbsp;
-&nbsp;&nbsp;
-VPLEX&nbsp;&nbsp;&nbsp;&nbsp;</span></big></big></big></big><big style="font-weight: bold;"><big><big><big><span></span></big></big></big></big><big style="font-weight: bold;"><big><big><big><span>
+<div class="div1"><big style="font-weight: bold;"><big><big><big><span>&nbsp;&nbsp;VPLEX&nbsp;&nbsp;&nbsp;&nbsp;</span></big></big></big></big><big style="font-weight: bold;"><big><big><big><span></span></big></big></big></big><big style="font-weight: bold;"><big><big><big><span>
 </span></big></big></big></big></div>
 <big><big><big><big><span style="color: white;"></span></big></big></big></big>
 <br>
-<div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="div2">
 <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
 <tbody>
 <tr>
