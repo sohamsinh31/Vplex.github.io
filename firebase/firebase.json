@@ -1,0 +1,22 @@
+{
+  
+
+    "hosting":"firebase",
+
+    "authDomain": "comment2-ada29.firebaseapp.com",
+
+    "databaseURL": "https://comment2-ada29-default-rtdb.firebaseio.com",
+
+    "projectId": "comment2-ada29",
+
+    "storageBucket": "comment2-ada29.appspot.com",
+
+    "messagingSenderId": "606517850348",
+
+    "appId": "1:606517850348:web:b4308922a002189033b5c9",
+
+    "measurementId": "G-6Y0WJKCL9D"
+
+  }
+
+
