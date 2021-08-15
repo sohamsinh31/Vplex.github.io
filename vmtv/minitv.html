@@ -1,200 +1,171 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="navbar.css">
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-    crossorigin="anonymous"></script>
-    <script>
-    $(function() {
-    $(".toggle").on("click", function() {
-        if ($(".item").hasClass("active")) {
-            $(".item").removeClass("active");
-        } else {
-            $(".item").addClass("active");
-        }
-    });
-});
-    </script>
- <style type="text/css">
-        /* Basic styling */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>h1</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body, p, li {
+font-family: Arial Black;
+font-style: inherit;
+text-transform: none;
+color: white;
+position: relative;
+overflow: scroll;
+background-color: #0e0e0e;
 }
-body {
-  font-family: sans-serif;
-  background: #0e0e0e;
+img {
+border: 2px outset transparent;
+border-radius: 12px;
 }
-nav {
-  background: #0e0e0e;
-  padding: 5px 20px;
+div {
+font-family: Arial Black;
+font-style: inherit;
+color: white;
+text-align: center;
+position: relative;
 }
-ul {
-  list-style-type: none;
+button {
+border: 4px solid white;
+height: 24px;
+background-color: transparent;
+border-radius: 12px;
+}
+.header {
+padding: 0.5em;
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+z-index: 2;
+height:6em;
+line-height: 1.2;
+width: 100%;
+background-color: #0e0e0e;
+}
+p1 {
+font-weight: bold;
+float: left;
+text-align: left;
+font-size: x-large;
+width: 90%;
+}
+p2 {
+font-family: Arial,Helvetica,sans-serif;
+font-size: x-large;
+width: 10%;
+float: right;
+font-weight: bold;
+}
+p3 {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: large;
+  float: left;
+}
+.header2 {
+z-index: 0;
+position: fixed;
+width: 100%;
+}
+.s1 {
+overflow: scroll;
+}
+.header::-webkit-scrollbar {
+display: none;
+}
+.header{
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+.im1 {
+  width: 10%;
+  height: 10%;
+  border-radius: 100px;
+  float: left;
+}
+.sp1 {
+  float: left;
+}
+.im2 {
+  width: 99%;
+  height: 195px;
+  border-radius: 12px;
 }
 a {
   color: white;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.logo a:hover {
-  text-decoration: none;
-}
-.menu li {
-  font-size: 16px;
-  padding: 15px 5px;
-  white-space: nowrap;
-}
-.logo a,
-.toggle a {
-  font-size: 20px;
-}
-.button.secondary {
-  border-bottom: 1px #444 solid;
 }
 
-/* Mobile menu */
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.header {
+  overflow:scroll;
 }
-.toggle {
-  order: 1;
+.header2 {
+overflow: scroll;
 }
-.item.button {
-  order: 2;
+table {
+  overflow: scroll;
 }
-.item {
-  width: 100%;
-  text-align: center;
-  order: 3;
-  display: none;
+.header3 {
+  overflow: scroll;
 }
-.item.active {
-  display: block;
+.header4 {
+  overflow: scroll;
 }
-
-/* Navbar Toggle */
-.toggle {
-  cursor:pointer;
+.header5 {
+  overflow: scroll;
 }
-.bars {
-  background: #999;
-  display: inline-block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
+.header6 {
+  overflow: scroll;
 }
-.bars:before,
-.bars:after {
-  background: #999;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
+.header7 {
+  overflow: scroll;
 }
-.bars:before {
-  top: 5px;
-}
-.bars:after {
-  top: -5px;
+.header8 {
+  overflow: scroll;
 }
 
-/* Tablet menu */
-@media all and (min-width: 468px) {
-  .menu {
-      justify-content: center;
-  }
-
-  .logo {
-      flex: 1;
-  }
-
-  .item.button {
-      width: auto;
-      order: 1;
-      display: block;
-  }
-  .toggle {
-      order: 2;
-  }
-  .button.secondary {
-      border: 0;
-  }
-  .button a {
-      padding: 7.5px 15px;
-      background: teal;
-      border: 1px #006d6d solid;
-      border-radius:50em;
-  }
-  .button.secondary a {
-      background: transparent;    
-  }
-  .button a:hover {
-      text-decoration: none;
-      transition:all .25s;
-  }
-  .button:not(.secondary) a:hover {
-      background: #006d6d;
-      border-color: #005959;
-  }
-  .button.secondary a:hover {
-      color: #ddd;
-  } 
+/* DESKTOP */
+div{
+  overflow: hidden;
 }
-
-/* Desktop menu */
-@media all and (min-width: 768px) {
-  .item {
-      display: block;
-      width: auto;
-  }
-  .toggle {
-      display: none;
-  }
-  .logo {
-      order: 0;
-  }
-  .item {
-      order: 1;
-  }
-  .button {
-      order: 2;
-  }
-  .menu li {
-      padding: 15px 10px;
-  }
-  .menu li.button {
-      padding-right: 0;
-  }
+table {
+  overflow: hidden;
 }
-    </style>
+}
+  </style>
+</style>
 </head>
 <body>
-    <nav>
-        <ul class="menu">
-            <li class="logo"><a href="#">VPLAY</a></li>
-            <li class="item"><a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/vplex.html">Home</a></li>
-            <li class="item"><a href="https://hemaborasia.wixsite.com/website">About</a></li>
-            <li class="item"><a href="#">Upcoming</a></li>
-            </li>
-            <li class="item button"><a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/vplex.html">VPLEX</a></li>
-            <li class="item button secondary"><a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/music/music.html">MUSIC</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-        </ul>
-    </nav>
-</body>
-</html>
+<div style="text-align: left;" class="header">
+<div style="text-align: center;"><big style="font-weight: bold;"><big><big><big><span><span class="c1" style="color: red;">&nbsp;&nbsp;</span></span></big></big></big></big><big style="font-weight: bold; font-family: Comic Sans MS; font-style: italic;"><big><big><big><span><span class="c1" style="color: red;"><img src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/vplayy.png?raw=true" alt="" style="width: 45px; height: 55px;"></span></span></big></big></big></big><big style="font-weight: bold;"><big><big><big><span>
+&nbsp;&nbsp;&nbsp;</span></big></big></big></big><big style="font-weight: bold;"><big><big><big><span></span></big></big></big></big>
+</div>
+<div class="header2">
+<table class="s1" style="text-align: left; background-color: rgb(14, 14, 14); width: 590px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top;"><a style="color: white;" href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/vplex.html"><button style="color: white;" value="videos" name="videos" type="button">FETURED</button></a><br>
+</td>
+<td style="vertical-align: top;"><a target="_self" href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/music/music.html"><button style="color: white;" value="MUSIC" name="music" type="button">TRENDING</button><br>
+</a></td>
+<td style="vertical-align: top;"><a style="color: white;" href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/vmtv/minitv.html"><span style="text-decoration: underline;"><button value="vmtv" style="color: white;" name="vmtv" type="button">NEW</button></span></a><br>
+</td>
+<td style="vertical-align: top;"><span style="text-decoration: underline; color: white;"><button style="color: white;" value="upcoming" name="upcoming">FACTS</button></span><br>
+</td>
+<td style="vertical-align: top;"><a href="https://hemaborasia.wixsite.com/website"><button style="color: white;" value="About us" name="About us">VPLAY!</button></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+  <p1><img class="im1" src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/channel/unnamed.png?raw=true">VOLVET</p1><p2>:</p2>
+<a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/ifrmes/swm1.html"><img class="im2" src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/maxresdefault%20(1).jpg?raw=true">
+<p3>SWAMI VIVEKANDA KE BAARE MEIN |VOLVET</p3></a>
+</div>
+</body></html>
