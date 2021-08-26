@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html><head><title>h1</title>
+<html><head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/
+font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>h1</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
@@ -24,10 +28,13 @@ text-align: center;
 position: relative;
 }
 button {
-border: 4px solid white;
 height: 22px;
 background-color: transparent;
+border-width: 2px;
+font-weight: bold;
 border-radius: 12px;
+font-size: large;
+border-color: transparent;
 }
 .header {
 padding: 0.5em;
@@ -36,7 +43,7 @@ top: 0;
 right: 0;
 left: 0;
 z-index: 2;
-height:2em;
+height:2.5em;
 line-height: 1.2;
 width: 100%;
 }
@@ -120,13 +127,14 @@ a {
 	position: absolute;
 	top: 25%;
 	left: 25%;
-	width: 50%;
-	height: 50%;
+	width: 55%;
+	height: 55%;
 	padding: 16px;
 	border: 11px solid black;
 	background-color: white;
 	z-index:1002;
 	overflow: auto;
+  margin-bottom: 50px;
 }
 button {
   display: block;
@@ -137,6 +145,108 @@ button {
   width: 18px;
   height: 18px;
   float:right;
+}
+* {
+box-sizing: border-box;
+}
+
+.openBtn {
+border-width: 1px;
+font-size: 40px;
+cursor: pointer;
+width: 15%;
+height: 100%;
+float: left;
+margin-bottom: 5px;
+border-radius: 9px;
+}
+
+.openBtn:hover {
+background: green;
+}
+
+.overlay {
+height: 100%;
+width: 100%;
+display: none;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+position: relative;
+top: 50%;
+width: 80%;
+text-align: center;
+margin-top: 30px;
+margin: auto;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 80px;
+cursor: pointer;
+color: white;
+}
+
+.overlay .closebtn:hover {
+color: blue;
+}
+
+.overlay input[type="text"] {
+padding: 15px;
+font-size: 17px;
+border: none;
+float: left;
+width: 80%;
+background: white;
+}
+
+.overlay input[type="text"]:hover {
+background: #f1f1f1;
+}
+
+.overlay button {
+float: left;
+width: 20%;
+padding: 15px;
+background: dodger-blue;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+.overlay button:hover {
+background: #bbb;
+}
+#fa {
+  width: 30%;
+  height: 40px;
+  margin-bottom: 5px;
+  float: left;
+}
+
+#footer {
+    position: fixed;
+    height: 45px;
+    background-color: #0e0e0e;
+    bottom: 5px;
+    margin-bottom: 5px;
+    width: 92%;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+body {
+    margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -151,7 +261,7 @@ button {
   float: left;
 }
 .im2 {
-  width: 99%;
+  width: 100%;
   height: 195px;
   border-radius: 12px;
 }
@@ -239,6 +349,32 @@ table {
 <br>
 <br>
 <br>
+<section id="footer">
+<div id="myOverlay" class="overlay">
+	<span class="closebtn"
+			onclick="closeSearch()"
+			title="Close Overlay">
+			×
+	</span>
+	<div class="overlay-content">
+		<form action="/action_page.php">
+		<input type="text"
+				placeholder="Search.."
+				name="search" />
+		<button type="submit">
+			<i class="fa fa-search"></i>
+		</button>
+		</form>
+	</div>
+	</div>
+	<button class="openBtn"
+			onclick="openSearch()">
+		  <i id="fa" class="fa fa-search"></i>
+	</button>
+  <button class="openBtn">
+    <i id="fa" class="fa fa-list" aria-hidden="true"></i>
+  </button>
+  </section>
 </body>
 <script>
   function togglePopup(){
@@ -263,5 +399,17 @@ function myFunction2() {
 <script>
  document.getElementById("q1").onclick= function() {window.location='https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/ifrmes/swm1.html'};
  document.getElementById("q2").onclick= function() {window.location='https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/ifrmes/sfl1.html'};
+</script>
+<script>
+  // Open the full screen search box
+function openSearch() {
+document.getElementById("myOverlay").style.display = "block";
+}
+
+// Close the full screen search box
+function closeSearch() {
+document.getElementById("myOverlay").style.display = "none";
+}
+
 </script>
 </html>
