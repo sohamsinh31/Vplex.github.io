@@ -146,6 +146,13 @@ button {
   height: 18px;
   float:right;
 }
+.btn2 {
+  display: block;
+  width: 17px;
+  height: 17px;
+  float: right;
+  right: 6px;
+}
 * {
 box-sizing: border-box;
 }
@@ -255,6 +262,18 @@ background: #bbb;
 }
 body {
     margin-bottom: 50px;
+}
+.more {
+  display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #0e0e0e;
+}
+.m1 {
+  display: block;
+  float: left;
+  width: fit-content;
 }
 
 @media only screen and (max-width: 768px) {
@@ -397,10 +416,11 @@ table {
       <i id="fa" class="fas fa-video"></i>
     </button>
   </a>
-  <a href="">
-    <button class="openBtn">
+  <div id="more" class="more" style="color: rgb(250, 245, 245)"><button style="font-size: x-large; font-weight: bold;"  class="btn2"><a style="color: white" href = "javascript:void(0)" onclick = "document.getElementById('more').style.display='none';document.getElementById('fade').style.display='none'">X</a></button><button class="m1" style="font-size: x-large;">UPLOAD YOURS</button><button class="m1" style="font-size: x-large;">ABOUT US!</button><button class="m1" style="font-size: x-large;">Help(tutorial)</button></div>
+  <button id="openBtn" class="openBtn">
       <i id="fa2" class="fas fa-ellipsis-v"></i>
     </button>
+  </a>
   </a>
   </section>
 </body>
@@ -423,6 +443,12 @@ function myFunction2() {
   document.getElementById("s4");
   s4.parentNode.removeChild(s4);
 }
+</script>
+<script>
+  document.getElementById("openBtn").onclick= function() {myFunction2()};
+function myFunction2() {
+  document.getElementById('more').style.display='block';document.getElementById('fade').style.display='block';
+};
 </script>
 <script>
  document.getElementById("q1").onclick= function() {window.location='https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/ifrmes/swm1.html'};
