@@ -1,5 +1,21 @@
 <html>
 <head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9206989260708474"
+     crossorigin="anonymous"></script>
+     <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+<script data-ad-client="ca-pub-9206989260708474" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "856de5c6-34c4-4e71-b69d-5615453ed0af",
+    });
+  });
+</script>
+<div class='onesignal-customlink-container'></div>
   <title>h1</title>
   <meta name="viewport"
  content="width=device-width, initial-scale=1">
@@ -110,7 +126,7 @@ top: 0;
 right: 0;
 left: 0;
 z-index: 2;
-height:2em;
+height:4em;
 line-height: 1.2;
 width: 100%;
 }
@@ -131,8 +147,7 @@ p2 {
 }
 .header2 {
 z-index: 0;
-width: 75%;
-float: right;
+width: 100%;
 }
 .s1 {
   overflow: scroll;
@@ -141,6 +156,90 @@ float: right;
   width: 80%;
   font-size: x-large;
   font-weight: bold;
+}
+.logo {
+  float: left;
+  width: 32%;
+  height: 265px;
+  border-radius: 0px;
+}
+.logo2 {
+  width: 67.5%;
+  color: white;
+  background-color: rgb(77, 75, 75);
+  height: 265px;
+  float: right;
+  border-radius: 0px;
+}
+.c2 {
+  text-align: left;
+  display: block;
+  text-decoration: white;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  float: left;
+  width: 100%;
+}
+.c3 {
+  display: block;
+  width: 100%;
+  float: left;
+}
+.bottom {
+  border-radius: 100px;
+  font-weight: bolder;
+  font-size: xx-large;
+  bottom: 5px;
+  right: 7px;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  color: black;
+  background-color: aqua;
+}
+.white_content {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 35%;
+	width: 66%;
+	height: 100%;
+	background-color: black;
+	z-index:1002;
+	overflow: hidden;
+  margin-bottom: 50px;
+  color: white;
+}
+.butn1 {
+  display: block;
+  width: 65%;
+  height: 42px;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: white;
+  border: 0px;
+}
+.butn2 {
+  border-radius: 100px;
+  font-weight: bolder;
+  font-size: xx-large;
+  bottom: 5px;
+  right: 7px;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  color: black;
+  background-color: aqua;
+}
+#myInput {
+  width: 70%;
+  height: 1.5em;
+  float: left;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  border: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -188,8 +287,9 @@ table {
 <div class="hh1" style="text-align: center;"><span
  class="c1" style="color: red;">VPLEX</span>
 </div>
+<input id="myInput" type="text" name="" placeholder="search on vplex" onblur="searchFun()">
 <div class="header2">
-<table class="s1"
+<table id="sch1" class="s1"
  style="text-align: left; width: 590px; height: 51px;"
  border="0" cellpadding="2" cellspacing="2">
   <tbody>
@@ -222,6 +322,14 @@ table {
   </tbody>
 </table>
 </div>
+</div>
+<br>
+<div id="light" class="white_content">
+  <a style="color: black" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><button class="butn2">X</button></a>
+<button class="butn1"><a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/vplex.html">HOME</a></button>
+<button class="butn1"><a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/vmtv/minitv.html">VPLAY</a></button>
+<button class="butn1"><a href="https://hemaborasia.wixsite.com/website">ABOUT US!</a></button>
+<button class="butn1"><a href="https://hemaborasia.wixsite.com/website">HELP</a></button>
 </div>
 <div id="sticky"></div>
 <br>
@@ -256,30 +364,30 @@ table {
 <span style="color: white;">Explore on VPLEX=&gt;<br>
 </span>&nbsp; <br>
 <div class="header3">
-<table style="text-align: left; width: 594px; height: 146px;"
+<table id="sch1" style="text-align: left; width: 594px; height: 146px;"
  border="0" cellpadding="2" cellspacing="2">
   <tbody>
     <tr>
       <td style="vertical-align: top;"><img
  src="https://static6.depositphotos.com/1002941/553/i/600/depositphotos_5537685-stock-photo-men-greeting-sun.jpg"
- style="width: 180px; height: 95px;" alt="MOTIVATIONAL"><br>
+ style="width: 180px; height: 95px;" alt="MOTIVATIONAL">
 MOTIVATIONAL<br>
       </td>
       <td style="vertical-align: top;"><a
  href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/music/music.html"><img
  src="https://www.androidpolice.com/wp-content/uploads/2020/10/27/YouTubeMusicCircleHero-01.png"
- style="border: 0px solid ; width: 180px; height: 95px;" alt=""></a><br>
+ style="border: 0px solid ; width: 180px; height: 95px;" alt=""></a>
 MUSIC<br>
       </td>
       <td style="vertical-align: top;"><img
  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpt0J-A5hviiznTHYBWe1C1hB-aAFCqqZeA&amp;usqp=CAU"
- style="width: 180px; height: 95px;" alt=""><br>
+ style="width: 180px; height: 95px;" alt="">
 FACTS<br>
       </td>
       <td style="vertical-align: top;"><img
  src="https://wallpapercave.com/wp/wp6895055.jpg"
- style="width: 180px; height: 95px;" alt=""><br>
-GAMING<br>
+ style="width: 180px; height: 95px;" alt="">
+GAMING
       </td>
     </tr>
   </tbody>
@@ -291,7 +399,7 @@ Liten 8D SONGS=&gt;<br>
 <br>
 <div class="header4">
 <div class="header7">
-<table style="text-align: left; width: 80%;" border="0"
+<table id="sch1" style="text-align: left; width: 80%;" border="0"
  cellpadding="2" cellspacing="2">
   <tbody>
     <tr>
@@ -332,7 +440,7 @@ Liten 8D SONGS=&gt;<br>
 WATCH IN YOUR LANGUAGE<br>
 <br>
 <div class="header5">
-<table style="text-align: left; width: 100%;" border="0"
+<table id="sch1" style="text-align: left; width: 100%;" border="0"
  cellpadding="2" cellspacing="2">
   <tbody>
     <tr>
@@ -356,7 +464,7 @@ WATCH IN YOUR LANGUAGE<br>
 ORIGNALS
 <br>
 <div class="header8">
-  <table style="text-align: left; width: 438px; height: 215px;"
+  <table id="sch1" style="text-align: left; width: 438px; height: 215px;"
  border="0" cellpadding="2" cellspacing="2">
   <tbody>
     <tr>
@@ -380,7 +488,7 @@ ORIGNALS
 new=&gt;</span></big><br>
 </div>
 <div class="header6" style="text-align: left;">
-<table style="text-align: left; width: 645px; height: 119px;"
+<table id="sch1" style="text-align: left; width: 645px; height: 119px;"
  border="0" cellpadding="2" cellspacing="2">
   <tbody>
     <tr>
@@ -407,6 +515,7 @@ new=&gt;</span></big><br>
     </tr>
   </tbody>
 </table>
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><button class="bottom">=</button></a>
 <br>
 <br>
 <br>
@@ -414,6 +523,7 @@ new=&gt;</span></big><br>
 <br>
 <br>
 <br>
+<div class='onesignal-customlink-container'><button class="onesignal-customlink-subscribe">suscribe</button><button class="link">suscribe</button></div>
 <span style="color: white;"><br>
 </span><span style="color: white;"></span><br>
 <span style="color: white;"><br>
@@ -423,6 +533,10 @@ new=&gt;</span></big><br>
 </span>
 </div>
 </div>
+<img class="logo" src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/Free_Sample_By_Wix.jpeg?raw=true"><div class="logo2"><span class="c2">"VPLEX" is registered logo of VOLVET DIGITAL</span><span class="c3">vplex created and designed by sohamsinh</span></div>
+<amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-9206989260708474">
+</amp-auto-ads>
 <script>
 var slidePosition = 1;
 SlideShow(slidePosition);
@@ -472,5 +586,64 @@ $("#various5").fancybox({
 'type' : 'iframe'
 });
 </script></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9206989260708474"
+     crossorigin="anonymous"></script>
+<!-- googleads -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9206989260708474"
+     data-ad-slot="8890857316"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script type="">
+// Your other init options here
+promptOptions: {
+  customlink: {
+    enabled: true, /* Required to use the Custom Link */
+    style: "button", /* Has value of 'button' or 'link' */
+    size: "medium", /* One of 'small', 'medium', or 'large' */
+    color: {
+      button: '#E12D30', /* Color of the button background if style = "button" */
+      text: '#FFFFFF', /* Color of the prompt's text */
+    },
+    text: {
+      subscribe: "Subscribe to push notifications", /* Prompt's text when not subscribed */
+      unsubscribe: "Unsubscribe from push notifications", /* Prompt's text when subscribed */
+      explanation: "Get updates from all sorts of things that matter to you", /* Optional text appearing before the prompt button */
+    },
+    unsubscribeEnabled: true, /* Controls whether the prompt is visible after subscription */
+  }
+}
+</script>
+<script>
+  
+  const searchFun = () =>{
+      let filter = document.getElementById('myInput').value();
+
+      let filter2 = console.log(filter);
+
+      let sch1 = document.getElementById('sch1');
+
+      let tr = sch1.getElementsByTagName('tr');
+
+      for(var w=0; w<tr.length; w++){
+          let td = tr[w].getElementsByTagName('td')[0];
+          if(td){
+              let textvalue = tr.textContent || tr.innerHTML;
+
+              if(textvalue = filter2 > -1){
+                  td[w].style.display = "block"; 
+              }else{
+                td[w].style.display = "none";
+              }
+          }
+      }
+      
+  }
+
+</script>
 </body>
 </html>
