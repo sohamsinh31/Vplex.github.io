@@ -366,7 +366,6 @@ table {
 <div class="header3">
 <table id="sch1" style="text-align: left; width: 594px; height: 146px;"
  border="0" cellpadding="2" cellspacing="2">
-  <tbody>
     <tr>
       <td style="vertical-align: top;"><img
  src="https://static6.depositphotos.com/1002941/553/i/600/depositphotos_5537685-stock-photo-men-greeting-sun.jpg"
@@ -384,13 +383,12 @@ MUSIC<br>
  style="width: 180px; height: 95px;" alt="">
 FACTS<br>
       </td>
-      <td style="vertical-align: top;"><img
+      <td style="vertical-align: top;">gaming<img
  src="https://wallpapercave.com/wp/wp6895055.jpg"
- style="width: 180px; height: 95px;" alt="">
-GAMING
+ style="width: 180px; height: 95px;" alt=""><br>
+GAMING<br>
       </td>
     </tr>
-  </tbody>
 </table>
 </div>
 <span style="color: white;"></span><br>
@@ -621,23 +619,23 @@ promptOptions: {
 <script>
   
   const searchFun = () =>{
-      let filter = document.getElementById('myInput').value();
-
-      let filter2 = console.log(filter);
+      let filter = document.getElementById('myInput').value;
 
       let sch1 = document.getElementById('sch1');
+
+      let sch2 = document.getElementsByClassName('sch2');
 
       let tr = sch1.getElementsByTagName('tr');
 
       for(var w=0; w<tr.length; w++){
           let td = tr[w].getElementsByTagName('td')[0];
           if(td){
-              let textvalue = tr.textContent || tr.innerHTML;
+              let textvalue = sch2.textContent || sch2.innerHTML;
 
-              if(textvalue = filter2 > -1){
-                  td[w].style.display = "block"; 
+              if(textvalue == filter > -1){
+                  tr[w].style.display = "block";tr[w].style.color = "white";
               }else{
-                td[w].style.display = "none";
+                tr[w].style.display = "none";
               }
           }
       }
