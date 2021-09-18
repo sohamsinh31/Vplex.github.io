@@ -521,17 +521,6 @@ new=&gt;</span></big><br>
 <br>
 <br>
 <br>
-<div class='onesignal-customlink-container'><button class="onesignal-customlink-subscribe">suscribe</button><button class="link">suscribe</button></div>
-<span style="color: white;"><br>
-</span><span style="color: white;"></span><br>
-<span style="color: white;"><br>
-<br>
-<span style="color: white;"><br>
-</span><br>
-</span>
-</div>
-</div>
-<img class="logo" src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/Free_Sample_By_Wix.jpeg?raw=true"><div class="logo2"><span class="c2">"VPLEX" is registered logo of VOLVET DIGITAL</span><span class="c3">vplex created and designed by sohamsinh</span></div>
 <amp-auto-ads type="adsense"
         data-ad-client="ca-pub-9206989260708474">
 </amp-auto-ads>
@@ -619,21 +608,21 @@ promptOptions: {
 <script>
   
   const searchFun = () =>{
-      let filter = document.getElementById('myInput').value;
+      let filter = document.getElementById('myInput').value();
 
       let sch1 = document.getElementById('sch1');
 
       let sch2 = document.getElementsByClassName('sch2');
 
-      let tr = sch1.getElementsByTagName('tr');
+      let tr = document.getElementsByTagName('tr');
 
       for(var w=0; w<tr.length; w++){
           let td = tr[w].getElementsByTagName('td')[0];
           if(td){
-              let textvalue = sch2.textContent || sch2.innerHTML;
+              let textvalue = td.textContent || td.innerHTML;
 
-              if(textvalue == filter > -1){
-                  tr[w].style.display = "block";tr[w].style.color = "white";
+              if(textvalue.indexof(filter) > -1){
+                  tr[w].style.display = "";
               }else{
                 tr[w].style.display = "none";
               }
