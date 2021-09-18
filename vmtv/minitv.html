@@ -177,22 +177,27 @@ height: 100%;
 width: 100%;
 display: none;
 position: fixed;
-z-index: 1;
+z-index: 1001;
 top: 0;
 left: 0;
-background-color: rgb(0, 0, 0);
-background-color: rgba(0, 0, 0, 0.9);
+background-color: #0e0e0e;
+opacity: 0.9;
 }
 
 .overlay-content {
 position: relative;
-top: 50%;
-width: 80%;
+top: 75%;
+width: 50%;
+height: 40%;
 text-align: center;
 margin-top: 30px;
 margin: auto;
 }
-
+#myInput {
+       background-color: aqua;
+       color: #0e0e0e;
+       border-radius: 12px;
+}
 .overlay .closebtn {
 position: absolute;
 top: 20px;
@@ -386,17 +391,15 @@ table {
 	<span class="closebtn"
 			onclick="closeSearch()"
 			title="Close Overlay">
-			×
+			X
 	</span>
-	<div class="overlay-content">
-		<form action="/action_page.php">
-		<input type="text"
+	<div class="overlay-content">		
+		<input type="text" onblur="searchFun()" id="myInput"
 				placeholder="Search.."
 				name="search" />
-		<button type="submit">
+		<button onclick="submit()">
 			<i class="fa fa-search"></i>
-		</button>
-		</form>
+              </button>
 	</div>
 	</div>
 	<button class="openBtn"
@@ -466,4 +469,29 @@ document.getElementById("myOverlay").style.display = "none";
 }
 
 </script>
+<script>
+  
+       const searchFun = () =>{
+           let filter = document.getElementById('myInput').value;
+       }
+       function submit() {
+           let filter = document.getElementById('myInput').value;  
+           let div = document.getElementsByTagName('div');
+     
+           for(var w=0; w<div.length; w++){
+               let td = div[w].getElementsByTagName('p3')[0];
+               if(td){
+                   let textvalue = td.textContent || td.innerHTML;
+     
+                   if(textvalue.indexOf(filter) > -1){
+                       div[w].style.display = "";
+                   }else{
+                     div[w].style.display = "none";
+                   }
+               }
+           }
+           
+       }
+     
+     </script>
 </html>
