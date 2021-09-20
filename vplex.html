@@ -365,8 +365,7 @@ table {
 </div>
 </div>
 <br>
-<span style="color: white;">Explore on VPLEX=&gt;<br>
-</span>&nbsp; <br>
+<div id="no">EXPLORE ON VPLEX</div>
 <div class="header3">
 <table id="sch1" style="text-align: left; width: 594px; height: 146px;"
  border="0" cellpadding="2" cellspacing="2">
@@ -395,10 +394,7 @@ GAMING</p>
     </tr>
 </table>
 </div>
-<span style="color: white;"></span><br>
-&nbsp;
-Liten 8D SONGS=&gt;<br>
-<br>
+<div id="no">LITEN 8D SONGS</div>
 <div class="header4">
 <div class="header7">
 <table id="sch1" style="text-align: left; width: 80%;" border="0"
@@ -439,8 +435,7 @@ Liten 8D SONGS=&gt;<br>
   </tbody>
 </table>
 </div>
-WATCH IN YOUR LANGUAGE<br>
-<br>
+<div id="no">WATCH IN YOUR LANGUAGE</div>
 <div class="header5">
 <table id="sch1" style="text-align: left; width: 100%;" border="0"
  cellpadding="2" cellspacing="2">
@@ -462,9 +457,7 @@ WATCH IN YOUR LANGUAGE<br>
   </tbody>
 </table>
 </div>
-<br>
-ORIGNALS
-<br>
+<div id="no">ORIGNALS</div>
 <div class="header8">
   <table id="sch1" style="text-align: left; width: 438px; height: 215px;"
  border="0" cellpadding="2" cellspacing="2">
@@ -485,10 +478,7 @@ ORIGNALS
 </div>
 <br>
 <br>
-<div class="header8" style="text-align: left;"><big><span
- style="font-weight: bold;">Whats
-new=&gt;</span></big><br>
-</div>
+<div id="no">WHATS NEW</div>
 <div class="header6" style="text-align: left;">
 <table id="sch1" style="text-align: left; width: 645px; height: 119px;"
  border="0" cellpadding="2" cellspacing="2">
@@ -618,7 +608,7 @@ promptOptions: {
            let sch = document.getElementsByTagName('table');
            let tr = document.getElementsByTagName('tr');
            let td = document.getElementsByTagName('td');
-           
+           let div = document.getElementById('no');
      
            for(var w=0; w<td.length;  w++){
                let ps = td[w].getElementsByTagName('p')[0];
@@ -626,9 +616,9 @@ promptOptions: {
                    let textvalue = ps.textContent || ps.innerHTML;
      
                    if(textvalue.indexOf(filter) > -1){
-                       td[w].style.display = "block";
+                       td[w].style.display = "block"; div.style.display = "none";
                    }else{
-                     td[w].style.display = "none";
+                     td[w].style.display = "none"; div.style.display =""
                    }
                }
            }
