@@ -616,7 +616,7 @@ promptOptions: {
                    let textvalue = ps.textContent || ps.innerHTML;
      
                    if(textvalue.indexOf(filter) > -1){
-                       td[w].style.display = "block"; div.style.display = "none";
+                       td[w].style.display = ""; div.style.display = "none";
                    }else{
                      td[w].style.display = "none"; div.style.display =""
                    }
