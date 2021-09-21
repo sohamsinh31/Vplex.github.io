@@ -280,6 +280,42 @@ body {
   float: left;
   width: fit-content;
 }
+.butn1 {
+  display: block;
+  width: 65%;
+  height: 42px;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: white;
+  border: 0px;
+}
+.butn2 {
+  border-radius: 100px;
+  font-weight: bolder;
+  font-size: xx-large;
+  bottom: 5px;
+  right: 7px;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  color: black;
+  background-color: aqua;
+}
+.white_content2 {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 35%;
+	width: 66%;
+	height: 100%;
+	background-color: black;
+	z-index:1002;
+	overflow: hidden;
+  margin-bottom: 50px;
+  color: white;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -365,6 +401,13 @@ table {
 </table>
 </div>
 </div>
+<div id="lightt" class="white_content2">
+  <a style="color: black" href = "javascript:void(0)" onclick = "document.getElementById('lightt').style.display='none';document.getElementById('fade').style.display='none'"><button class="butn2">X</button></a>
+<button class="butn1"><a href="https://webhost-30b9b.firebaseapp.com/">HOME</a></button>
+<button class="butn1"><a href="https://webhost-30b9b.firebaseapp.com/vmtv">VPLAY</a></button>
+<button class="butn1"><a href="https://hemaborasia.wixsite.com/website">ABOUT US!</a></button>
+<button class="butn1"><a href="https://hemaborasia.wixsite.com/website">HELP</a></button>
+</div>
 <br>
 <br>
 <div id="s2">
@@ -407,8 +450,8 @@ table {
 		  <i id="fa" class="fa fa-search"></i>
 	</button>
   <button class="openBtn">
-    <i id="fa" class="fa fa-list" aria-hidden="true"></i>
-  </button>
+    <a href="http://api.whatsapp.com/send?phone=+917041220136&text=uploadvideo"><i id="fa" class="fa fa-plus" aria-hidden="true"></i>
+  </button></a>
   <a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/music/music.html">
     <button class="openBtn">
       <i id="fa" class="fas fa-music"></i>
@@ -419,10 +462,11 @@ table {
       <i id="fa" class="fas fa-video"></i>
     </button>
   </a>
-  <div id="more" class="more" style="color: rgb(250, 245, 245)"><button style="font-size: x-large; font-weight: bold;"  class="btn2"><a style="color: white" href = "javascript:void(0)" onclick = "document.getElementById('more').style.display='none';document.getElementById('fade').style.display='none'">X</a></button><button class="m1" style="font-size: x-large;">UPLOAD YOURS</button><button class="m1" style="font-size: x-large;">ABOUT US!</button><button class="m1" style="font-size: x-large;">Help(tutorial)</button></div>
+  <a href = "javascript:void(0)" onclick = "document.getElementById('lightt').style.display='block';document.getElementById('fade').style.display='block'">
   <button id="openBtn" class="openBtn">
       <i id="fa2" class="fas fa-ellipsis-v"></i>
     </button>
+  </a>
   </a>
   </a>
   </section>
