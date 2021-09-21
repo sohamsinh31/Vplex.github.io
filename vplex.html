@@ -245,6 +245,9 @@ width: 100%;
   color: white;
   border-radius: 12px;
 }
+p {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -618,7 +621,7 @@ promptOptions: {
                    if(textvalue.indexOf(filter) > -1){
                        td[w].style.display = ""; div.style.display = "none";
                    }else{
-                     td[w].style.display = "none"; div.style.display =""
+                     td[w].style.display = "none"; div.style.display ="";
                    }
                }
            }
