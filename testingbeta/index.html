@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/
+font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>vplay</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body, p, li {
+font-family: Arial Black;
+font-style: inherit;
+text-transform: none;
+color: white;
+position: relative;
+overflow: scroll;
+background-color: #0e0e0e;
+}
+img {
+border: 5px outset transparent;
+border-radius: 12px;
+}
+div {
+font-family: Arial Black;
+font-style: inherit;
+color: white;
+text-align: center;
+position: relative;
+}
+button {
+height: 22px;
+background-color: transparent;
+border-width: 2px;
+font-weight: bold;
+border-radius: 12px;
+font-size: large;
+border-color: transparent;
+}
+.header {
+position: fixed;
+top: 7%;
+right: 0;
+left: 0;
+z-index: 2;
+height:2.5em;
+line-height: 1.2;
+width: 100%;
+}
+.hh1 {
+  float: left;
+  width: 25%;
+}
+p1 {
+font-weight: bold;
+float: left;
+text-align: left;
+font-size: x-large;
+width: 165px;
+}
+p2 {
+font-family: Arial,Helvetica,sans-serif;
+font-size: x-large;
+width: 15px;
+float: right;
+font-weight: bold;
+}
+p3 {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: large;
+  float: left;
+}
+.header2 {
+z-index: 0;
+width: 75%;
+float: right;
+}
+.s1 {
+overflow: scroll;
+}
+.header::-webkit-scrollbar {
+display: none;
+}
+.header{
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+.sp1 {
+  float: left;
+}
+a {
+  color: white;
+}
+.c1 {
+  width: 80%;
+  font-size: x-large;
+  font-weight: bold;
+}
+.pm1 {
+  width: 20%;
+  font-weight: bold;
+  font-size: xx-large;
+  float: right;
+}
+.im1 {
+  border-radius: 100px;
+}
+.im2 {
+  border-radius: 12px;
+}
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	display: none;
+	position: fixed;
+  top: 60%;
+	left: 0;
+  bottom: 0%;
+	width: 100%;
+	height: 55%;
+	padding: 16px;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+  border-top: 5px;
+  border-radius: 12px;
+  border-bottom: 0px;
+}
+button {
+  font-family:"Open Sans",sans-serif;
+  border-color: aqua;
+  border-radius: 12px;
+}
+.btn1 {
+  display: table-row-group;
+  width: 18px;
+  height: 18px;
+  float:right;
+  border: transparent;
+}
+.btn2 {
+  display: table-row-group;
+  width: 100%;
+  height: 17px;
+  right: 6px;
+  border-bottom: 6px;
+  border-color: #0e0e0e;
+  border: transparent;
+}
+* {
+box-sizing: border-box;
+}
+
+.openBtn {
+font-size: 40px;
+cursor: pointer;
+width: 20%;
+height: 100%;
+float: left;
+margin-bottom: 5px;
+border-radius: 9px;
+border-color: transparent;
+}
+
+.openBtn:hover {
+background: green;
+}
+
+.overlay {
+height: 100%;
+width: 100%;
+display: none;
+position: fixed;
+z-index: 1001;
+top: 0;
+left: 0;
+background-color: #0e0e0e;
+opacity: 0.9;
+}
+
+.overlay-content {
+position: relative;
+top: 75%;
+width: 50%;
+height: 40%;
+text-align: center;
+margin-top: 30px;
+margin: auto;
+}
+#myInput {
+       background-color: aqua;
+       color: #0e0e0e;
+       border-radius: 12px;
+}
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 80px;
+cursor: pointer;
+color: white;
+}
+
+.overlay .closebtn:hover {
+color: blue;
+}
+
+.overlay input[type="text"] {
+padding: 15px;
+font-size: 17px;
+border: none;
+float: left;
+width: 80%;
+background: white;
+}
+
+.overlay input[type="text"]:hover {
+background: #f1f1f1;
+}
+.fl1 {
+  width: 33%;
+}
+
+.overlay button {
+float: left;
+width: 20%;
+padding: 15px;
+background: dodger-blue;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+.overlay button:hover {
+background: #bbb;
+}
+#fa {
+  width: 30%;
+  height: 40px;
+  margin-bottom: 5px;
+  float: left;
+  color: gold;
+}
+#fa2 {
+  width: 40%;
+  height: 40px;
+  margin-bottom: 5px;
+  float: left;
+  color: gold;
+}
+
+#footer {
+    position: fixed;
+    height: 45px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 spx 15px rgba(121, 86, 86, 0.7);
+    bottom: 5px;
+    margin-bottom: 5px;
+    width: 95%;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    left: 6px;
+    right: 4px;
+}
+body {
+    margin-bottom: 50px;
+}
+.more {
+  display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #0e0e0e;
+}
+.m1 {
+  display: block;
+  float: left;
+  width: fit-content;
+}
+.butn1 {
+  display: block;
+  width: 65%;
+  height: 100px;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: black;
+  border: 0px;
+  padding-top: 3px;
+}
+.no2 {
+  display: block;
+  width: 75%;
+  height: 30px;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: black;
+  border: 0px;
+  padding-top: 3px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.butn2 {
+  border-radius: 100px;
+  font-weight: bolder;
+  font-size: xx-large;
+  bottom: 5px;
+  right: 7px;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  color: black;
+  background-color: aqua;
+}
+.white_content2 {
+	display: none;
+	position: fixed;
+	top: 7%;
+	left: 35%;
+	width: 66%;
+	height: 100%;
+	background-color: black;
+	z-index:1002;
+	overflow: hidden;
+  margin-bottom: 50px;
+  color: white;
+}
+.start2 {
+  top: 8%;
+  display: block;
+}
+/* #s2, #s4, #s6 {
+  width: 360px;
+} */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.header {
+  overflow:scroll;
+}
+.im1 {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  float: left;
+}
+.im2 {
+  width: 100%;
+  height: 195px;
+  border-radius: 12px;
+}
+.header2 {
+overflow: scroll;
+}
+table {
+  overflow: scroll;
+}
+.header3 {
+  overflow: scroll;
+}
+div {
+  display: block;
+  width: 100%;
+}
+.flex {
+  display: block;
+  width: 100%;
+}
+.fl1 {
+  width: 100%;
+}
+}
+/* DESKTOP */
+div{
+  overflow: hidden;
+}
+table {
+  overflow: hidden;
+}
+.im1 {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+}
+.im2 {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  float: left;
+}
+  </style>
+</style>
+</head>
+<body>
+<div style="text-align: left;" class="header">
+<div class="hh1" style="text-align: center;"><span><span class="c1" style="color: red;"> VPLAY </span>
+</div>
+<div class="header2">
+<table class="s1" style="text-align: left; width: 500px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top;"><a style="color: white;" href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/vplex.html"><button style="color: white;" value="videos" name="videos" type="button">FETURED</button></a><br>
+</td>
+<td style="vertical-align: top;"><a target="_self" href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/music/music.html"><button style="color: white;" value="MUSIC" name="music" type="button">TRENDING</button><br>
+</a></td>
+<td style="vertical-align: top;"><a style="color: white;" href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/vmtv/minitv.html"><span style="text-decoration: underline;"><button value="vmtv" style="color: white;" name="vmtv" type="button">NEW</button></span></a><br>
+</td>
+<td style="vertical-align: top;"><span style="text-decoration: underline; color: white;"><button style="color: white;" value="upcoming" name="upcoming">FACTS</button></span><br>
+</td>
+<td style="vertical-align: top;"><a href="https://hemaborasia.wixsite.com/website"><button style="color: white;" value="About us" name="About us">VPLAY!</button></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="lightt" class="white_content2">
+  <a style="color: black" href = "javascript:void(0)" onclick = "document.getElementById('lightt').style.display='none';document.getElementById('fade').style.display='none'"><button class="butn2">X</button></a>
+<button class="butn1"><a href="https://webhost-30b9b.firebaseapp.com/">HOME</a></button>
+<button class="butn1"><a href="https://webhost-30b9b.firebaseapp.com/vmtv">VPLAY</a></button>
+<button class="butn1"><a href="https://hemaborasia.wixsite.com/website">ABOUT US!</a></button>
+<button class="butn1"><a href="https://hemaborasia.wixsite.com/website">HELP</a></button>
+</div>
+<div class="flex">
+<div id="light" class="white_content" style="color: black"><button style="font-size: x-large; font-weight: bold;"  class="btn1"><a style="color: black" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">X</a></button><button class="no2" id="q1" style="font-size: x-large;">watch now</button><button class="no2" style="font-size: x-large;">watch later</button><button class="no2" id="s1" style="font-size: x-large;"> not intrested</button></div>
+<br>
+<div class="fl1" id="s2">
+ <a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/channels/volvet.html"><p1><img class="im1" src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/channel/unnamed.png?raw=true">VOLVET</p1></a><p2 style="color: black;"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">:</a></p2>
+<a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/ifrmes/swm1.html"><img class="im2" src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/maxresdefault%20(1).jpg?raw=true">
+<p3>SWAMIVIVEKANDA KE BAARE MEIN|VOLVET</p3></a>
+</div>
+<br>
+<div class="fl1" id="s4">
+  <a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/channels/volvet.html"><p1><img class="im1" src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/channel/unnamed.png?raw=true">VOLVET</p1></a><p2 style="color: black;"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">:</a></p2><div id="light2" class="white_content" style="color: black"><button style="font-size: x-large; font-weight: bold;"  class="btn1"><a style="color: black" href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">X</a></button><button class="no2" id="q2" style="font-size: x-large;">watch now</button><button class="no2" style="font-size: x-large;">watch later</button><button class="no2" id="s3" style="font-size: x-large;">not intrested</button></div>
+<a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/ifrmes/sfl1.html"><img class="im2" src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/maxresdefault.jpg?raw=true">
+<p3>SAFAL HONE KE NIYAM e2 |VOLVET</p3></a>
+</div>
+<br>
+<div class="fl1" id="s6">
+  <a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/channels/volvet.html"><p1><img class="im1" src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/channel/unnamed.png?raw=true">VOLVET</p1></a><p2 style="color: black;"><a href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='block';document.getElementById('fade').style.display='block'">:</a></p2><div id="light3" class="white_content" style="color: black"><button style="font-size: x-large; font-weight: bold;"  class="btn1"><a style="color: black" href = "javascript:void(0)" onclick = "document.getElementById('light3').style.display='none';document.getElementById('fade').style.display='none'">X</a></button><button id="q3" style="font-size: x-large;">watch now</button><button style="font-size: x-large;">watch later</button><button id="s5" style="font-size: x-large;">not intrested</button></div>
+<a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/ifrmes/sfl2.html"><img class="im2" src="https://github.com/sohamsinh31/Vplex.github.io/blob/main/images/mq2.jpg?raw=true">
+<p3>VPLEX EXCLUSIVE</p3></a>
+</div>
+</div>
+<br>
+<br>
+<section id="footer">
+<div id="myOverlay" class="overlay">
+	<span class="closebtn"
+			onclick="closeSearch()"
+			title="Close Overlay">
+			X
+	</span>
+	<div class="overlay-content">		
+		<input type="text" onblur="searchFun()" id="myInput"
+				placeholder="Search.."
+				name="search" />
+		<button onclick="submit()">
+			<i class="fa fa-search"></i>
+              </button>
+	</div>
+	</div>
+	<button class="openBtn"
+			onclick="openSearch()">
+		  <i id="fa" class="fa fa-search"></i>
+	</button>
+  <button class="openBtn">
+    <a href="http://api.whatsapp.com/send?phone=+917041220136&text=uploadvideo"><i id="fa" class="fa fa-plus" aria-hidden="true"></i>
+  </button></a>
+  <a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/music/music.html">
+    <button class="openBtn">
+      <i id="fa" class="fas fa-music"></i>
+    </button>
+  </a>
+  <a href="https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/vplex.html">
+    <button class="openBtn">
+      <i id="fa" class="fas fa-video"></i>
+    </button>
+  </a>
+  <a href = "javascript:void(0)" onclick = "document.getElementById('lightt').style.display='block';document.getElementById('fade').style.display='block'">
+  <button id="openBtn" class="openBtn">
+      <i id="fa2" class="fas fa-ellipsis-v"></i>
+    </button>
+  </a>
+  </a>
+  </a>
+  </section>
+</body>
+<script>
+  function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+</script>
+<script>
+  document.getElementById("s1").onclick= function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("s2");
+  s2.parentNode.removeChild(s2);
+}
+
+// document.getElementById("s3").onclick= function() {myFunction2()};
+
+// function myFunction2() {
+//  let f2 = document.activeElement;
+// f2.parentNode.removeChild(f2);
+// }
+</script>
+<script>
+  document.getElementById("openBtn").onclick= function() {myFunction2()};
+function myFunction2() {
+  document.getElementById('more').style.display='block';document.getElementById('fade').style.display='block';
+};
+</script>
+<script>
+ document.getElementById("q1").onclick= function() {window.location='https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/ifrmes/swm1.html'};
+ document.getElementById("q2").onclick= function() {window.location='https://htmlpreview.github.io/?https://github.com/sohamsinh31/Vplex.github.io/blob/main/ifrmes/sfl1.html'};
+</script>
+<script>
+  // Open the full screen search box
+function openSearch() {
+document.getElementById("myOverlay").style.display = "block";
+}
+
+// Close the full screen search box
+function closeSearch() {
+document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+  // for(var j=0; j<div.length; j++){
+  //   let div = document.getElementsByTagName('div');
+  // if(div){
+  //   div[j].onfocus
+  // }
+  // }
+</script>
+<script>
+document.addEventListener('mouseup', function(e) {
+  var container = document.getElementById('light','lightt','light2');
+  if (!container.contains(e.target)) {
+      container.style.display = 'none';
+  }
+});
+</script>
+<script>
+  
+       const searchFun = () =>{
+           let filter = document.getElementById('myInput').value;
+       }
+       function submit() {
+           let filter = document.getElementById('myInput').value;  
+           let div = document.getElementsByTagName('div');
+     
+           for(var w=0; w<div.length; w++){
+               let td = div[w].getElementsByTagName('p3')[0];
+               if(td){
+                   let textvalue = td.textContent || td.innerHTML;
+     
+                   if(textvalue.indexOf(filter) > -1){
+                       div[w].style.display = "";
+                   }else{
+                     div[w].style.display = "none";
+                   }
+               }
+           }
+           
+       }
+     
+     </script>
+     <script>
+      //  function moreop() {
+      //    let light = document.getElementById("light")
+      //    for(var z=o; z<light.n);
+      //  }
+     </script>
+     <script>
+       document.addEventListener("contextmenu",function(minitv) {
+         minitv.preventDefault();
+       });
+     </script>
+</html>

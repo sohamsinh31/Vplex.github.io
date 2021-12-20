@@ -1,0 +1,291 @@
+body, li {
+    font-family: Arial Black;
+    font-style: inherit;
+    text-transform: none;
+    color: white;
+    position: relative;
+    background-color: maroon;
+    overflow: scroll;
+  }
+  img {
+    border-radius: 0px;
+  }
+  div {
+    font-family: Arial Black;
+    font-style: inherit;
+    color: white;
+    text-align: left;
+    position: relative;
+  }
+  a {
+    color: inherit;
+  }
+  table {
+    border: 0px hidden #660000;
+  }
+  .slideshow-container {
+    max-width: 1320px;
+    position: relative;
+    top: 0;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .im4 {
+    border-radius: 0px;
+    height: 100%;
+    max-width: 1320px;
+    top: 0;
+  }
+  .Containers {
+    display: none;
+  }
+  .Back, .forward {
+    padding: 17px;
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+  }
+  .forward {
+    right: 0;
+  }
+  .Info {
+    padding: 10px 14px;
+    color: #e3e3e3;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .MessageInfo {
+    padding: 10px 14px;
+    color: #f2f2f3;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+  }
+  .dots {
+    margin: 0 3px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    background-color: #aacccc;
+  }
+  .enable, .dots:hover {
+    background-color: #717161;
+  }
+  .fade {
+  }
+  .header6 img {
+    border-radius: 12px;
+  }
+  .Div1 {
+    border-style: solid;
+    border-width: 0;
+    width: 100%;
+    min-height: 50px;
+    position: fixed;
+  }
+  #stickytypeheader {
+    width: 100%;
+    height: 20%;
+  }
+  #sticky {
+    display: none;
+    height: 10px;
+  }
+  #content {
+    margin-top: 20px;
+  }
+  button {
+    border: 4px solid white;
+    height: 24px;
+    background-color: rgba(94, 58, 58, 0.808);
+    border-radius: 10px;
+  }
+  .header {
+  padding: 0.5em;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 8%;
+  z-index: 2;
+  height:4em;
+  line-height: 1.2;
+  width: 100%;
+  }
+  .hh1 {
+    float: left;
+    width: 25%;
+  }
+  p1 {
+    font-weight: bold;
+    float: left;
+    font-size: xx-large;
+  }
+  p2 {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: xx-large;
+    float: right;
+    font-weight: bold;
+  }
+  .header2 {
+  z-index: 0;
+  width: 100%;
+  }
+  .s1 {
+    overflow: scroll;
+  }
+  .c1 {
+    width: 80%;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .logo {
+    float: left;
+    width: 32%;
+    height: 265px;
+    border-radius: 0px;
+  }
+  .logo2 {
+    width: 67.5%;
+    color: white;
+    background-color: rgb(77, 75, 75);
+    height: 265px;
+    float: right;
+    border-radius: 0px;
+  }
+  .c2 {
+    text-align: left;
+    display: block;
+    text-decoration: white;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    width: 100%;
+  }
+  .c3 {
+    display: block;
+    width: 100%;
+    float: left;
+  }
+  .bottom {
+    border-radius: 100px;
+    font-weight: bolder;
+    font-size: xx-large;
+    bottom: 5px;
+    right: 7px;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    color: black;
+    background-color: aqua;
+  }
+  .white_content {
+      display: none;
+      position: fixed;
+      top: 7%;
+      left: 35%;
+      width: 66%;
+      height: 100%;
+      background-color: black;
+      z-index:1002;
+      overflow: hidden;
+    margin-bottom: 50px;
+    color: white;
+  }
+  .butn1 {
+    display: block;
+    width: 65%;
+    height: 42px;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    border: 0px;
+    background-color: transparent;
+  }
+  .butn2 {
+    border-radius: 100px;
+    font-weight: bolder;
+    font-size: xx-large;
+    bottom: 5px;
+    right: 7px;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    color: black;
+    background-color: aqua;
+  }
+  #myInput {
+    width: 64%;
+    height: 1.5em;
+    float: left;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    border: hidden;
+  }
+  #searchbtn {
+    color: white;
+    border-radius: 12px;
+  }
+  p {
+    display: none;
+  }
+  .schh {
+    display: none;
+    top: 9%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  .header {
+    overflow:scroll;
+    top: 5%;
+  }
+  .slideshow-container {
+    height: 360px;
+  }
+  .header2 {
+  overflow: scroll;
+  }
+  table {
+    overflow: scroll;
+  }
+  .header3 {
+    overflow: scroll;
+  }
+  .header4 {
+    overflow: scroll;
+  }
+  .header5 {
+    overflow: scroll;
+  }
+  .header6 {
+    overflow: scroll;
+  }
+  .header7 {
+    overflow: scroll;
+  }
+  .header8 {
+    overflow: scroll;
+  }
+  .im4 {
+    height: 360px;
+  }
+  
+  /* DESKTOP */
+  div{
+    overflow: hidden;
+  }
+  table {
+    overflow: hidden;
+  }
+  }
