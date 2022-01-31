@@ -1,0 +1,142 @@
+body, li {
+  overflow: scroll;
+  font-family: Arial Black;
+  font-style: inherit;
+  text-transform: none;
+  color: white;
+  top: 8%;
+  position: relative;
+  background-color: #0e0e0e;
+}
+#hed {
+  overflow: scroll;
+}
+img {
+  border-radius: 12px;
+}
+a {
+  color: inherit;
+}
+table {
+  border: 0px hidden #660000;
+  overflow: scroll;
+}
+td {
+  border-top-style: hidden;
+}
+tr {
+  border-top-style: hidden;
+}
+tbody {
+  border-style: hidden;
+}
+#ifr {
+  width: 49%;
+  height: 33%;
+  border-style: hidden;
+border-radius:13px;
+left: 0;
+}
+big {
+  overflow: hidden;
+}
+.left {
+  width: 100%;
+  font-style: inherit;
+  overflow: scroll;
+  text-align: center;
+}
+p {
+  color: white;
+  width: 24%;
+  float: left;
+  top: 0;
+  position: relative;
+}
+input {
+  border-style: none none solid;
+  top: 0;
+  float: left;
+  width: 73%;
+  border-bottom: 2px solid white;
+  position: static;
+  background: none;
+}
+.white_content2 {
+  color: black;
+    display: none;
+  scroll-behavior: smooth;
+  scrollbar-width: 7px;
+  flex-direction: column;
+  top: 41%;
+    left: 0;
+    width: 99%;
+    min-height: 100%;
+    background-color: rgb(0 0 0 / 23%);
+    backdrop-filter: blur(12px);    /* z-index:1002; */
+  overflow: scroll;
+  position: sticky;
+   border-top: 5px;
+  border-radius: 12px;
+  border-bottom: 0px;
+}
+.had {
+  width: 15%;
+  width: 95%;
+}
+#close {
+  float: right;
+  color: white;
+  right: 9px;
+  font-size: 31px;
+}
+#insert {
+  background-color: blue;
+  border-radius: 5px;
+  width: 25%;
+}
+.scr {
+  /* overflow-x: scroll;
+  overflow-y: scroll; */
+  height: 65%;
+  position: relative;
+  color: black;
+  flex-direction: column-reverse;
+}
+.h3 {
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  float: left;
+  width: 100%;
+  height: 20px;
+}
+.h4 {
+  color: white;
+  top: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-align: left;
+  width: 100%;
+  border-style: none none solid;
+  border-bottom: 2px solid black;
+}
+#had {
+  overflow: scroll;
+}
+/* div {
+  overflow: scroll;
+} */
+@media only screen and (max-width: 768px) {
+  #ifr{
+    width: 100%;
+    height: 33%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #ifr {
+    width: 49%;
+    height: 50%;
+  }
+}
